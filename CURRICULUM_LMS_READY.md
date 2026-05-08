@@ -31,187 +31,267 @@ Each topic is intentionally short so students feel consistent progress.
 
 ## Topic 1: HTML Fundamentals
 **Duration:** Week 2  
-**Outcome:** Students can structure real pages.
+**Outcome:** Students can build and explain a semantic multi-section HTML page manually, then improve it with AI using clear prompts and verification.
 
 ### Lessons
-1. HTML tags, elements, attributes
-2. Semantic HTML
-3. Links, images, lists, tables
-4. Forms and input elements
-5. Page structure for business websites
+1. From Topic 0 to Topic 1: converting the BookEase idea into page sections (Hero, Features, Testimonials, CTA, Footer)
+2. HTML tags, elements, attributes
+3. Document structure (`<!DOCTYPE>`, `html`, `head`, `body`)
+4. Semantic HTML
+5. Links, images, lists, tables
+6. Forms and input elements
+7. Page structure for business websites
+8. AI-assisted HTML workflow: prompt -> generate -> verify -> manual fixes
 
 ### Topic Project
 - **Project:** BookEase Landing Page Skeleton
-- **Deliverable:** Structured multi-section HTML page
+- **Deliverable:** Structured multi-section HTML page with:
+  - Manual first draft and AI-improved version
+  - Semantic sections (`header`, `main`, `section`, `footer`)
+  - GitHub commit history (meaningful commit messages)
+  - Short reflection: what AI improved and what was fixed manually
 
 ---
 
 ## Topic 2: CSS & Responsive Design
 **Duration:** Week 3  
-**Outcome:** Students can style and make pages mobile-friendly.
+**Outcome:** Students can style the Topic 1 HTML skeleton into a clean, responsive landing page and validate design decisions with AI support.
 
 ### Lessons
-1. CSS selectors and box model
-2. Typography, colors, spacing
-3. Flexbox essentials
-4. Responsive design with media queries
-5. Mobile-first layout checks
+1. From Topic 1 to Topic 2: freezing HTML structure before styling
+2. CSS selectors and box model
+3. Typography, colors, spacing
+4. Flexbox essentials
+5. Responsive design with media queries
+6. Mobile-first layout checks
+7. AI-assisted styling workflow: generate CSS options -> compare -> keep best -> manual polish
 
 ### Topic Project
 - **Project:** Styled BookEase Landing Page
-- **Deliverable:** Responsive design that works on phone/tablet/desktop
+- **Deliverable:** Responsive design that works on phone/tablet/desktop with:
+  - Consistent typography, spacing, and color system
+  - Mobile-first CSS and breakpoint checks
+  - Before/after comparison of at least one AI styling suggestion
+  - GitHub commit history with meaningful commit messages
 
 ---
 
 ## Topic 3: JavaScript Basics + First Deployment
 **Duration:** Week 4  
-**Outcome:** Students can add interactivity and publish live.
+**Outcome:** Students can add core JavaScript interactivity to the styled BookEase page, debug common issues, and deploy a working live version.
 
 ### Lessons
-1. Variables, data types, conditions, loops
-2. Functions and basic logic
-3. DOM manipulation
-4. Events and form validation
-5. Hosting basics (domain, DNS, SSL)
-6. Deploying on Hostinger
+1. From Topic 2 to Topic 3: keeping HTML/CSS stable while adding JS behavior
+2. Variables, data types, conditions, loops
+3. Functions and basic logic
+4. DOM manipulation
+5. Events and form validation
+6. Debugging basics (console, common runtime errors, fixing AI-generated JS mistakes)
+7. Hosting basics (domain, DNS, SSL)
+8. Deploying on Hostinger
+9. AI-assisted JavaScript workflow: prompt -> test in browser -> debug -> refine
 
 ### Topic Project
 - **Project:** Interactive BookEase Landing Site
-- **Deliverable:** Live website URL on hosting
+- **Deliverable:** Live website URL on hosting with:
+  - At least 3 JavaScript interactions (for example: menu toggle, form validation, dynamic section update)
+  - No blocking console errors in browser
+  - One bug-fix log showing issue -> diagnosis -> final fix
+  - GitHub commit history with meaningful commit messages
 
 ---
 
 ## Topic 4: Stabilization Sprint 1 (Client-Style Build)
 **Duration:** Week 5  
-**Outcome:** Confidence through independent repetition.
+**Outcome:** Students can independently deliver a client-style responsive website from brief to deployment with clear planning, execution, and QA.
 
 ### Lessons
-1. Requirement breakdown from a client brief
-2. Planning sections and UI blocks
-3. Rebuilding faster with clean HTML/CSS/JS
-4. Mobile QA and final polish
+1. From Topic 3 to Topic 4: applying first deployment experience to a new client brief
+2. Requirement breakdown from a client brief
+3. Planning sections and UI blocks
+4. Rebuilding faster with clean HTML/CSS/JS
+5. AI-assisted execution: generating alternatives, validating output, and keeping code quality
+6. Mobile QA and final polish
+7. Handoff basics: preparing project notes for client/team review
 
 ### Topic Project
 - **Project:** Choose one: Gym/Cafe/Salon/Portfolio website
-- **Deliverable:** Fully responsive, deployed client-style website
+- **Deliverable:** Fully responsive, deployed client-style website with:
+  - Brief-to-build plan (sections, features, timeline)
+  - Live deployed URL and GitHub repository link
+  - QA checklist evidence (mobile, tablet, desktop, form behavior, broken links)
+  - Short delivery note: scope completed, limitations, and next improvements
 
 ---
 
 ## Topic 5: React Foundations
 **Duration:** Week 6  
-**Outcome:** Students can build component-based frontend apps.
+**Outcome:** Students can convert a static client-style page into a React component-based application with reusable UI and state-driven behavior.
 
 ### Lessons
-1. Why React and component thinking
-2. JSX fundamentals
-3. Props and reusable components
-4. State with `useState`
-5. Event handling in React
+1. From Topic 4 to Topic 5: moving from static pages to component architecture
+2. Why React and component thinking
+3. JSX fundamentals
+4. Props and reusable components
+5. State with `useState`
+6. Event handling in React
+7. Basic project structure and file organization in React apps
+8. AI-assisted React workflow: scaffold -> review component boundaries -> refine manually
 
 ### Topic Project
 - **Project:** BookEase Frontend v1 in React
-- **Deliverable:** Componentized homepage and service cards
+- **Deliverable:** Componentized homepage and service cards with:
+  - Clear component tree (for example: Header, Hero, Services, Testimonials, Footer)
+  - Reusable card/list component driven by props
+  - At least one state-based interaction using `useState`
+  - GitHub commit history with meaningful commit messages
 
 ---
 
 ## Topic 6: React Data Flow & Routing
 **Duration:** Week 7  
-**Outcome:** Students can create multi-page app flow.
+**Outcome:** Students can build a multi-page React app with routing, data-driven UI, and reliable loading/error handling.
 
 ### Lessons
-1. Lists with `.map()`
-2. Controlled forms
-3. `useEffect` basics
-4. React Router fundamentals
-5. Basic loading and error states
+1. From Topic 5 to Topic 6: extending component-based UI into multi-page user journeys
+2. Lists with `.map()`
+3. Controlled forms
+4. `useEffect` basics
+5. React Router fundamentals
+6. Basic loading and error states
+7. Shared layout and navigation patterns across pages
+8. AI-assisted debugging for data flow and routing issues
 
 ### Topic Project
 - **Project:** BookEase Multi-Page Frontend
-- **Deliverable:** Home/Services/Book pages with dynamic data
+- **Deliverable:** Home/Services/Book pages with dynamic data and:
+  - Working navigation between routes
+  - At least one form with controlled inputs and validation feedback
+  - Clear loading and error state handling on one data-driven section
+  - GitHub commit history with meaningful commit messages
 
 ---
 
 ## Topic 7: TypeScript for React
 **Duration:** Week 8  
-**Outcome:** Students can write safer frontend code.
+**Outcome:** Students can add practical TypeScript types to a React app to reduce runtime bugs and improve code reliability.
 
 ### Lessons
-1. TypeScript basics (`string`, `number`, `boolean`, arrays)
-2. Interfaces and type aliases
-3. Props typing in components
-4. Typed state and typed API responses
-5. Common TS errors and fixes
+1. From Topic 6 to Topic 7: converting existing React flows into type-safe code
+2. TypeScript basics (`string`, `number`, `boolean`, arrays)
+3. Interfaces and type aliases
+4. Props typing in components
+5. Typed state and typed API responses
+6. Common TS errors and fixes
+7. Gradual migration strategy (`.jsx`/`.js` to `.tsx`/`.ts`) without breaking features
+8. AI-assisted TypeScript workflow: generate types -> validate compiler errors -> refine manually
 
 ### Topic Project
 - **Project:** Type-safe BookEase Frontend
-- **Deliverable:** React app migrated to TypeScript basics
+- **Deliverable:** React app migrated to TypeScript basics with:
+  - Typed component props for core UI components
+  - Typed state for key interactive features
+  - Typed API response model for at least one data flow
+  - Resolved TypeScript compiler errors and clean commit history
 
 ---
 
 ## Topic 8: Stabilization Sprint 2 (No-AI Week)
 **Duration:** Week 9  
-**Outcome:** Independent coding and confidence retention.
+**Outcome:** Students can build and debug a small React+TypeScript app independently without AI assistance, proving true skill retention.
 
 ### Lessons
-1. Planning without AI
-2. Manual component building
-3. Manual debugging workflow
-4. Code review and self-assessment
+1. From Topic 7 to Topic 8: validating TypeScript and React skills without AI assistance
+2. Planning without AI
+3. Manual component building
+4. Manual debugging workflow
+5. Code review and self-assessment
+6. Time-boxed implementation strategy for interview-style coding tasks
+7. Post-sprint reflection: what to automate later with AI vs what must stay manual
 
 ### Topic Project
 - **Project:** Mini Booking App (No AI)
-- **Deliverable:** Working React+TS mini app built manually
+- **Deliverable:** Working React+TS mini app built manually with:
+  - At least 3 reusable components and one typed form flow
+  - Clean TypeScript compile and no blocking runtime errors
+  - Self-review checklist (code quality, naming, structure, edge cases)
+  - Sprint note documenting challenges, fixes, and confidence level
 
 ---
 
 ## Topic 9: Python Fundamentals for Backend
 **Duration:** Week 10  
-**Outcome:** Students can write Python logic for APIs.
+**Outcome:** Students can write clean Python backend logic, structure code into reusable modules, and prepare for API development in upcoming topics.
 
 ### Lessons
-1. Python syntax and data types
-2. Lists/dictionaries
-3. Conditions/loops/functions
-4. Basic data transformation logic
-5. Virtual environment and package installation
+1. From Topic 8 to Topic 9: moving from frontend logic mindset to backend problem solving
+2. Python syntax and data types
+3. Lists/dictionaries
+4. Conditions/loops/functions
+5. Basic data transformation logic
+6. Virtual environment and package installation
+7. Functions, modules, and file organization for backend projects
+8. Error handling basics (`try`/`except`) and input validation
+9. Reading/writing JSON files and simple API-like data handling
+10. AI-assisted Python workflow: generate logic -> run tests/checks -> debug -> refine manually
 
 ### Topic Project
 - **Project:** Booking Logic Scripts in Python
-- **Deliverable:** Python scripts for filtering/searching/price logic
+- **Deliverable:** Python scripts for filtering/searching/price logic with:
+  - Modular function-based structure (not one long script)
+  - Input validation and basic error handling
+  - JSON-based input/output simulation for booking data
+  - GitHub commit history with meaningful commit messages
 
 ---
 
 ## Topic 10: FastAPI Basics
 **Duration:** Week 11  
-**Outcome:** Students can create REST APIs.
+**Outcome:** Students can build and test a structured FastAPI REST API with validated input/output models and reliable error handling.
 
 ### Lessons
-1. API and HTTP method basics
-2. FastAPI setup and route creation
-3. Request/response models with Pydantic
-4. Path/query params
-5. Swagger API documentation
+1. From Topic 9 to Topic 10: converting Python business logic into API endpoints
+2. API and HTTP method basics
+3. FastAPI setup and route creation
+4. Request/response models with Pydantic
+5. Path/query params
+6. Status codes, validation errors, and exception handling
+7. Swagger API documentation
+8. API testing basics with Postman/Swagger and response verification
+9. AI-assisted backend workflow: generate endpoint draft -> test responses -> fix edge cases manually
 
 ### Topic Project
 - **Project:** BookEase API v1
-- **Deliverable:** CRUD endpoints for services/bookings
+- **Deliverable:** CRUD endpoints for services/bookings with:
+  - Input/output validation using Pydantic models
+  - Proper status codes and clear error responses
+  - Tested endpoint collection (Postman or Swagger test evidence)
+  - GitHub commit history with meaningful commit messages
 
 ---
 
 ## Topic 11: Auth, Security Basics, Integration
 **Duration:** Week 12  
-**Outcome:** Students can secure and connect frontend-backend.
+**Outcome:** Students can implement secure authentication, protect backend/frontend routes, and integrate React with FastAPI using production-style practices.
 
 ### Lessons
-1. JWT auth basics
-2. Password hashing
-3. Protected routes
-4. CORS and `.env` basics
-5. React to API integration (Axios/fetch)
+1. From Topic 10 to Topic 11: adding identity and access control to existing APIs
+2. JWT auth basics
+3. Password hashing
+4. Protected routes
+5. CORS and `.env` basics
+6. Token storage strategy and logout/session handling
+7. React to API integration (Axios/fetch)
+8. Auth error handling (401/403), route guards, and user feedback states
+9. AI-assisted security workflow: generate auth scaffold -> verify security checklist -> patch gaps manually
 
 ### Topic Project
 - **Project:** Auth-Enabled BookEase
-- **Deliverable:** Login + protected booking flow
+- **Deliverable:** Login + protected booking flow with:
+  - Register/login/logout flow and hashed passwords
+  - JWT-based protected backend endpoints and frontend route guards
+  - Environment-based secret/config management (`.env`)
+  - Security and integration test evidence (invalid token, expired token, unauthorized access)
 
 ---
 
