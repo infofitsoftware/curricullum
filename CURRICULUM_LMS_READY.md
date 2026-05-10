@@ -297,208 +297,314 @@ Each topic is intentionally short so students feel consistent progress.
 
 ## Topic 12: Stabilization Sprint 3 (Backend Reinforcement)
 **Duration:** Week 13  
-**Outcome:** API confidence through rebuild.
+**Outcome:** Students can design, build, and verify a FastAPI service independently, applying patterns from Topics 10–11 (validation, errors, auth awareness) without step-by-step hand-holding.
 
 ### Lessons
-1. API design checklist
-2. Validation and error handling
-3. Testing endpoints in Swagger/Postman
-4. Refactor and cleanup
+1. From Topic 11 to Topic 12: carrying auth, validation, and integration discipline into a new API domain (inventory/orders)
+2. API design checklist (resources, naming, HTTP verbs, status codes)
+3. Validation and error handling (Pydantic, consistent error bodies)
+4. Testing endpoints in Swagger/Postman (happy path + failure cases)
+5. Refactor and cleanup (routers, dependencies, file layout)
+6. Documentation quality (`README`, Swagger as contract, optional OpenAPI notes)
+7. Time-boxed rebuild: plan -> implement -> test -> tighten
 
 ### Topic Project
 - **Project:** Mini Inventory/Orders API
-- **Deliverable:** Independent API with clean endpoints
+- **Deliverable:** Independent API with clean endpoints and:
+  - CRUD or core workflows for inventory/items and orders (or equivalent domain)
+  - Validated models and predictable error responses
+  - Test evidence (Swagger/Postman screenshots or exported collection)
+  - `README` with run instructions and API overview
+  - GitHub commit history with meaningful commit messages
 
 ---
 
 ## Topic 13: PostgreSQL & SQL
 **Duration:** Week 14  
-**Outcome:** Students can store and query persistent data.
+**Outcome:** Students can model relational data in PostgreSQL, write correct SQL for reads and writes, and justify schema choices for a booking-style product.
 
 ### Lessons
-1. Tables, rows, primary/foreign keys
-2. Basic SQL queries
-3. Joins and filtering
-4. Database schema design for BookEase
+1. From Topic 12 to Topic 13: why APIs need durable storage and how tables map to resources
+2. Tables, rows, primary/foreign keys, constraints, and indexes (basics)
+3. Basic SQL queries (`SELECT`, `INSERT`, `UPDATE`, `DELETE`)
+4. Joins and filtering (`INNER`/`LEFT`, `WHERE`, `ORDER BY`, `LIMIT`)
+5. Aggregates and grouping (`COUNT`, `SUM`, `AVG`, `MIN`/`MAX`, `GROUP BY`, `HAVING`)
+6. Database schema design for BookEase (entities, relationships, normalization trade-offs)
+7. Transactions and isolation (conceptual: when to commit, avoid partial updates)
+8. AI-assisted SQL workflow: draft queries -> run against real data -> fix errors and edge cases manually
 
 ### Topic Project
 - **Project:** BookEase Database Setup
-- **Deliverable:** DB schema + sample data + key queries
+- **Deliverable:** DB schema + sample data + key queries with:
+  - `CREATE TABLE` scripts or migration-style SQL files in the repo
+  - Seed data that exercises foreign keys and realistic booking scenarios
+  - Documented queries for common product needs (list services, bookings by user/date, availability checks)
+  - At least two aggregate reports (for example: bookings per day/week, revenue or count per service) using `GROUP BY`/`HAVING` where appropriate
+  - Short design note: tables, keys, and why relationships are modeled this way
 
 ---
 
 ## Topic 14: ORM + Migrations + Full Stack Persistence
 **Duration:** Week 15  
-**Outcome:** Backend uses real DB persistence.
+**Outcome:** Students can map the Topic 13 schema to SQLAlchemy models, evolve the database safely with Alembic migrations, and run a FastAPI backend that reads and writes Postgres end to end.
 
 ### Lessons
-1. SQLAlchemy models
-2. Alembic migrations
-3. DB session patterns
-4. Replace in-memory storage with Postgres
+1. From Topic 13 to Topic 14: from hand-written SQL/schema files to ORM models and repeatable migrations
+2. SQLAlchemy models (columns, types, relationships, constraints)
+3. Alembic migrations (create, upgrade, downgrade awareness, migration review before apply)
+4. DB session patterns for FastAPI (session per request, dependency injection, commit/rollback)
+5. Replace in-memory or fake storage with Postgres-backed repositories/services
+6. Query patterns with the ORM (filters, joins, avoiding N+1 basics)
+7. AI-assisted persistence workflow: scaffold models/migrations -> review for correctness -> test against real DB
 
 ### Topic Project
 - **Project:** Persistent BookEase API
-- **Deliverable:** Fully DB-backed backend
+- **Deliverable:** Fully DB-backed backend with:
+  - Alembic migration history that matches the intended BookEase schema
+  - CRUD or core flows hitting Postgres (no production-critical data left in memory only)
+  - Evidence of safe schema change (at least one follow-up migration after the initial create)
+  - Short runbook: how to apply migrations and reset local data when needed
+  - GitHub commit history with meaningful commit messages
 
 ---
 
 ## Topic 15: Docker + Local Full Stack Run
 **Duration:** Week 16  
-**Outcome:** Students can run full app reliably.
+**Outcome:** Students can run the Topic 14–15 stack (API + Postgres + optional frontend) locally in containers with repeatable commands, sane env configuration, and basic troubleshooting.
 
 ### Lessons
-1. Docker basics
-2. Dockerfile fundamentals
-3. Docker Compose for app + DB
-4. Environment config for containers
+1. From Topic 14 to Topic 15: from "works on my machine" to a reproducible local environment the whole team can share
+2. Docker basics (images, containers, ports, volumes, logs)
+3. Dockerfile fundamentals (base image, layers, `CMD`/`ENTRYPOINT`, build context)
+4. Docker Compose for app + DB (services, networks, named volumes, depends_on / healthchecks)
+5. Environment config for containers (`.env` for local dev, secrets not baked into images)
+6. Daily workflow: build, up/down, view logs, exec into a container for debugging
+7. AI-assisted Docker workflow: generate Compose/Dockerfile drafts -> security review (no secrets in repo) -> test locally and fix manually
 
 ### Topic Project
 - **Project:** Containerized BookEase
-- **Deliverable:** One-command local startup
+- **Deliverable:** One-command local startup with:
+  - `docker compose` (or documented equivalent) bringing up API + database (and frontend if already in scope)
+  - Persistent DB data via volumes and documented reset steps
+  - `README` section: prerequisites, env variables, URLs/ports, common fixes (port in use, migration order)
+  - Evidence of a clean run (screenshot or short screen recording optional; or pasted log snippet)
 
 ---
 
 ## Topic 16: Git, GitHub, Team Workflow
 **Duration:** Week 17  
-**Outcome:** Students can work like real software teams.
+**Outcome:** Students can collaborate using Git and GitHub like a product team: branches, pull requests, constructive review, and traceability from idea to merged code.
 
 ### Lessons
-1. Git core commands
-2. Branching strategy
-3. Pull requests and review flow
-4. Agile basics (tickets, standups, sprints)
-5. Professional README writing
+1. From Topic 15 to Topic 16: sharing the same runnable project via Git so teammates can clone and follow the Docker/README setup
+2. Git core commands (status, diff, add, commit, push, pull, fetch, stash basics)
+3. Branching strategy (feature branches, protected `main`, meaningful branch names)
+4. Pull requests and review flow (description, scope, linking issues, addressing feedback)
+5. Merge conflicts: causes, resolution, and prevention with small PRs
+6. Agile basics (tickets, standups, sprints) mapped to how work lands in GitHub (issues → branch → PR → merge)
+7. Professional README writing (setup, env, how to run with Docker, contribution expectations)
+8. AI-assisted Git hygiene: draft commit messages and PR text -> verify diffs and authorship yourself
 
 ### Topic Project
 - **Project:** Team Workflow Simulation
-- **Deliverable:** PR-based feature merge with code review
+- **Deliverable:** PR-based feature merge with code review and:
+  - Feature branch off `main`, multiple commits with clear messages
+  - PR description (what/why, test notes, screenshots if UI)
+  - At least one round of review feedback addressed (or documented reviewer checklist)
+  - Merged outcome or equivalent documented approval state suitable for your LMS
 
 ---
 
 ## Topic 17: Testing Basics
 **Duration:** Week 18  
-**Outcome:** Students can verify software quality.
+**Outcome:** Students can define test cases, automate API checks, run focused automated tests, and report defects so a teammate can reproduce and fix them.
 
 ### Lessons
-1. Testing mindset for beginners
-2. API test cases in Postman
-3. Pytest basics for FastAPI
-4. Frontend testing awareness (React Testing Library intro)
-5. Bug report writing
+1. From Topic 16 to Topic 17: tests and bug reports turn collaboration and review into confidence before merge and deploy
+2. Testing mindset for beginners (risk-based testing: what must never break vs nice-to-have)
+3. API test cases in Postman (happy path, validation errors, auth failures, edge cases)
+4. Pytest basics for FastAPI (`TestClient`, fixtures, organizing `tests/`, running the suite locally)
+5. Frontend testing awareness (React Testing Library intro: render, user events, one meaningful component test)
+6. Bug report writing (steps to reproduce, expected vs actual, environment, logs, severity)
+7. AI-assisted testing workflow: generate test ideas and draft tests -> run and fix failures -> keep tests small and trustworthy
 
 ### Topic Project
 - **Project:** BookEase Test Pack
-- **Deliverable:** Test checklist + Postman collection + basic pytest file
+- **Deliverable:** Test checklist + Postman collection + basic pytest file with:
+  - Manual QA checklist covering critical user/API paths (aligned with BookEase scope)
+  - Importable Postman collection with folders for main flows and error cases
+  - At least one pytest module exercising FastAPI routes (including one negative case, for example 401/422)
+  - One short bug-report example filled with a realistic defect (real or simulated)
+  - GitHub commit history with meaningful commit messages
 
 ---
 
 ## Topic 18: AWS EC2 Deployment (Deep Learning)
 **Duration:** Week 19  
-**Outcome:** Students understand real server deployment.
+**Outcome:** Students can provision EC2 correctly and recognize where other core AWS services fit (networking, storage, databases, observability, secrets, DNS) so later topics and real jobs make sense—not EC2 in isolation.
 
 ### Lessons
-1. AWS core concepts (EC2/IAM/security groups)
-2. Linux server basics + SSH
-3. Server setup for app runtime
-4. Production config basics
+1. From Topic 17 to Topic 18: deploy only what you can verify; smoke checks mirror Postman/pytest flows
+2. AWS core concepts (regions, AZs, billing awareness, EC2, IAM users/roles, key pairs, security groups as a firewall)
+3. VPC essentials at a useful level (VPC, subnets, route tables, internet gateway; why instances live in a network context)
+4. Linux server basics + SSH (permissions, logs, processes)
+5. Server setup for app runtime (dependencies, environment variables on the server, no secrets committed to Git)
+6. Running the app under a resilient pattern (for example `systemd` service or documented process manager) and restart-on-failure basics
+7. Production config basics (`DEBUG=false`, CORS, DB URL from env, health check endpoint)
+8. Amazon S3 (buckets, object policies vs IAM, common uses: uploads/backups/artifacts)
+9. Amazon RDS (managed Postgres/MySQL vs running Postgres on the same EC2; security groups to the DB; when to migrate)
+10. Observability with CloudWatch (log groups, metrics, alarms; tying app/system logs to one place)
+11. Secrets: AWS Secrets Manager or Systems Manager Parameter Store vs pasting secrets over SSH (rotation awareness, no secrets in Git)
+12. Route 53 and load balancers (how DNS and optional ALB fit your path; deep setup in Topic 19)
+13. Operational hygiene: least-privilege IAM, key handling, no shared passwords in chat
+14. AI-assisted ops workflow: draft runbooks and configs -> manually verify security groups, ports, VPC reachability, and secrets before exposing services
 
 ### Topic Project
 - **Project:** BookEase Server Provisioning
-- **Deliverable:** Running app process on EC2 instance
+- **Deliverable:** Running app process on EC2 instance with:
+  - Documented SSH access (key-based) and which user runs the app
+  - Security group rules explained (SSH source, app HTTP/HTTPS ports, and DB rules if applicable)
+  - Reachable URL/IP demonstrating the API or a health endpoint
+  - Short runbook: deploy steps, viewing logs, restarting the service
+  - One-page **AWS service map** for BookEase: briefly state what **EC2**, **VPC/security groups**, **S3**, **RDS** (or on-EC2 DB), **CloudWatch**, **Secrets Manager/Parameter Store**, and **Route 53** would each be responsible for in a production-like setup (even if you only fully implement EC2 this week)
+  - Explicit note on what remains for Topic 19 (domain, Nginx, SSL hardening)
 
 ---
 
 ## Topic 19: Domain, Nginx, SSL
 **Duration:** Week 20  
-**Outcome:** Students can make production app publicly accessible.
+**Outcome:** Students can attach a real domain to their server, terminate TLS safely at the edge with Nginx, and validate end-to-end HTTPS behavior suitable for a public demo or early production.
 
 ### Lessons
-1. DNS record mapping
-2. Nginx reverse proxy setup
-3. HTTPS with Let’s Encrypt
-4. Deployment validation checklist
+1. From Topic 18 to Topic 19: from raw IP/ports on EC2 to a stable hostname, reverse proxy, and trusted certificates
+2. DNS record mapping (`A`/`AAAA`, `CNAME`, TTL, propagation; registrar vs Route 53 mental model)
+3. Nginx reverse proxy setup (upstream to FastAPI/Node, `proxy_pass`, headers, timeouts; static files vs API routes where relevant)
+4. HTTPS with Let’s Encrypt (Certbot HTTP-01 or DNS-01 awareness; certificate renewal and automation concept)
+5. TLS hygiene (redirect HTTP to HTTPS, modern cipher suites at awareness level, optional security headers)
+6. Deployment validation checklist (curl/browser checks, API behind HTTPS, websocket notes if used, common failure modes: DNS, firewall, Nginx syntax)
+7. AI-assisted ops workflow: generate Nginx/Certbot steps -> verify configs manually before reload -> never paste private keys into chat
 
 ### Topic Project
 - **Project:** Production BookEase Live
-- **Deliverable:** Live HTTPS domain-backed application
+- **Deliverable:** Live HTTPS domain-backed application with:
+  - Public URL using your domain (not only an IP) and valid TLS in the browser
+  - Documented Nginx site config (file path or sanitized snippet in the repo/README)
+  - Documented certificate issuance and **renewal** plan (cron/systemd timer or platform equivalent)
+  - Smoke tests: health or main API route over HTTPS plus one frontend route if applicable
+  - Short note on what you would harden next (rate limits, WAF, CDN—preview only)
 
 ---
 
 ## Topic 20: CI/CD + Modern Deployment Awareness
 **Duration:** Week 21  
-**Outcome:** Students can automate release and compare deployment options.
+**Outcome:** Students can automate testing and deployment with clear separation of secrets and environments, and choose sane hosting paths for frontend vs backend in real projects.
 
 ### Lessons
-1. CI/CD concepts
-2. GitHub Actions deployment pipeline
-3. Secrets and environment handling
-4. Platform overview: Vercel, Railway, Render, Fly.io
-5. “When to use what” deployment decision matrix
+1. From Topic 19 to Topic 20: repeat safe releases with automation instead of manual SSH edits for every change
+2. CI/CD concepts (continuous integration vs continuous delivery/deployment, build → test → deploy stages, rollback mindset)
+3. GitHub Actions deployment pipeline (workflows, jobs, runners, artifacts, branch triggers)
+4. Secrets and environment handling (GitHub encrypted secrets, OIDC to cloud providers at awareness level, never commit `.pem` or API keys)
+5. Patterns for deploying to your stack (for example: SSH to EC2 + restart, Docker build/push, or platform-native deploy hooks)
+6. Platform overview: Vercel, Railway, Render, Fly.io (strengths, limits, pricing intuition, what runs where for SPA + API)
+7. “When to use what” deployment decision matrix (team size, budget, traffic, compliance, latency, ops burden)
+8. AI-assisted CI/CD: draft workflows -> review triggers and secret scopes -> validate with a test branch before merging
 
 ### Topic Project
 - **Project:** Auto-Deploy Setup
-- **Deliverable:** Code push triggers deployment automatically
+- **Deliverable:** Code push triggers deployment automatically with:
+  - A working GitHub Actions workflow (or equivalent CI) wired to the repo
+  - At least one automated step beyond deploy (for example: run tests or lint, or build artifacts)
+  - Documented required secrets/env vars **by name** (values stored only in GitHub/platform, not in the repo)
+  - One successful run log/screenshot or link to workflow run
+  - Brief comparison note: why this path vs a fully managed platform for BookEase
 
 ---
 
 ## Topic 21: AI Integration in Product
 **Duration:** Week 22  
-**Outcome:** Students can ship AI-powered product features.
+**Outcome:** Students can add LLM-backed features to BookEase safely: secure keys, clear API design, user-facing UX, basic guardrails, and cost-aware operation—not demo-only glue code.
 
 ### Lessons
-1. LLM API basics
-2. Prompt design for product use cases
-3. FastAPI AI endpoints
-4. React chatbot UI integration
-5. AI guardrails and cost basics
+1. From Topic 20 to Topic 21: ship AI features through the same deployment and secrets discipline (env vars, CI, no keys in frontend bundles)
+2. LLM API basics (providers, API keys, models, tokens, rate limits, streaming vs single-shot at awareness level)
+3. Prompt design for product use cases (system vs user messages, constraints, output format, few-shot patterns when needed)
+4. Structured outputs and validation (JSON schema / Pydantic parsing of model output; handling refusals and malformed responses)
+5. FastAPI AI endpoints (request/response models, timeouts, error mapping, optional background tasks)
+6. React integration (chat UI, loading/error states, optimistic vs confirmed updates; optional streaming/SSE awareness)
+7. AI guardrails (prompt injection basics, PII minimization, logging redaction, abuse handling mindset)
+8. Cost and reliability (token estimates, caching strategy awareness, fallbacks when the API is down)
+9. AI-assisted development workflow: generate prompts and handlers -> always verify outputs with tests and manual edge cases
 
 ### Topic Project
 - **Project:** BookEase AI Assistant
-- **Deliverable:** Live chatbot + recommendation feature
+- **Deliverable:** Live chatbot + recommendation feature with:
+  - Backend route(s) secured with server-side API keys (never exposed in client build)
+  - User-visible loading and error states in React
+  - At least one guardrail or policy choice documented (what you refuse, truncate, or omit)
+  - Basic cost or usage note (rough token/model choice rationale)
+  - Test or manual QA checklist for bad inputs and empty states
+  - GitHub commit history with meaningful commit messages
 
 ---
 
 ## Topic 22: Capstone Build & Demo
 **Duration:** Week 23  
-**Outcome:** Students can independently build and launch a full product.
+**Outcome:** Students can scope, build, deploy, and present an independent full-stack product that combines BookEase-era skills (React+TS, FastAPI, DB, auth, deploy, tests) with at least one clear AI-enabled feature.
 
 ### Lessons
-1. Capstone planning and scope control
-2. Feature implementation sprint
-3. Final QA and mobile audit
-4. Deployment and presentation prep
+1. From Topic 21 to Topic 22: treat AI as one product capability inside a reliable core—stability, security, and UX come first
+2. Capstone planning and scope control (user stories, must-have vs nice-to-have, riskiest assumptions first)
+3. Feature implementation sprint (vertical slices, trunk-based or short-lived branches, integration checkpoints)
+4. Final QA and mobile audit (regression list, edge cases, performance sanity, accessibility spot-checks)
+5. Deployment and presentation prep (staging vs prod mindset, smoke tests, demo script, rollback plan)
+6. Demo storytelling: problem, user, architecture one-pager, trade-offs, and known limitations
 
 ### Topic Project
 - **Project:** HireLocal (AI-powered marketplace)
-- **Deliverable:** Live full-stack product + demo presentation
+- **Deliverable:** Live full-stack product + demo presentation with:
+  - Public HTTPS URL(s) for frontend and API (or justified single-host proxy setup)
+  - Core flows working end-to-end (browse/search, book or hire equivalent, auth if in scope)
+  - At least one AI feature that is demonstrably connected to real API behavior (not mocked-only)
+  - README: setup, env vars (by name), run instructions, architecture sketch
+  - 5–8 minute demo recording or live session with slides/architecture diagram
+  - Honest “phase 2” backlog tied to user value
 
 ---
 
 ## Topic 23: Career, Freelancing, Entrepreneurship Launch
 **Duration:** Week 24  
-**Outcome:** Students leave market-ready.
+**Outcome:** Students leave with recruiter-ready materials, a credible public footprint, and a practical go-to-market plan for freelancing or a lean startup—grounded in proof from the capstone, not generic claims.
 
 ### Lessons
-1. Resume and GitHub portfolio polishing
-2. Fiverr/Upwork profile setup
-3. Proposal writing and pricing basics
-4. First client outreach strategy
-5. MVP-to-startup roadmap
+1. From Topic 22 to Topic 23: turn shipped work into evidence (case study, metrics, repos, demos)
+2. Resume and GitHub portfolio polishing (impact bullets, stack tags, ATS readability; READMEs that prove ownership)
+3. LinkedIn profile alignment (headline, About, featured projects, activity plan at a sustainable cadence)
+4. Fiverr/Upwork profile setup (niche, packages, portfolio pieces, response-time expectations)
+5. Proposal writing and pricing basics (scoping questions, milestones, change requests, deposits, hourly vs fixed)
+6. First client outreach strategy (warm intros, DMs, local businesses, outreach templates—ethical, non-spam)
+7. Interview and take-home prep (system design lite, debugging narrative, talking through BookEase/HireLocal trade-offs)
+8. MVP-to-startup roadmap (feedback loops, landing page tests, legal/tax awareness at “know what you don’t know” level)
 
 ### Topic Project
 - **Project:** Market Launch Kit
-- **Deliverable:** Resume + portfolio + freelance profile + 3 proposals
+- **Deliverable:** Resume + portfolio + freelance profile + 3 proposals with:
+  - One-page resume tailored to full-stack + AI-enabled product work
+  - GitHub profile/readme polish and 1–2 flagship repos (HireLocal or strongest project) with screenshots and live links
+  - Complete freelance marketplace profile (bio, skills, pricing starter packages)
+  - Three tailored proposals for realistic job posts (different client types or budgets)
+  - Short “next 30 days” plan: outreach targets, weekly hours, and one measurable goal (applications sent, portfolio hits, first call)
 
 ---
 
 ## Recurring LMS Blocks (Add to Every Week)
 
-1. **Debugging Lab (weekly):** one broken scenario to diagnose and fix  
-2. **Applied Logic Drill (weekly):** small coding logic task from project data  
-3. **Mobile Review Gate (weekly):** mandatory phone/tablet checks  
-4. **Progress Demo (weekly):** every student presents 2–3 minutes  
-5. **AI Reflection (weekly):** what AI helped with, what was coded manually
+Each block should have a **short prompt**, **estimated time**, **submission type**, and a simple **done checklist** in your LMS.
+
+1. **Debugging Lab (weekly):** One deliberately broken scenario (frontend, API, or DB) to diagnose with console/logs/SQL—submission: root cause + fix summary + prevention note.  
+2. **Applied Logic Drill (weekly):** Small coding or data task tied to BookEase/realistic domain data—submission: working snippet + 2 test cases.  
+3. **Mobile Review Gate (weekly):** Mandatory phone/tablet pass on the current build—submission: checklist + 1 screenshot of the worst issue found (or “no issues” with device noted).  
+4. **Progress Demo (weekly):** 2–3 minute demo of what changed since last week—submission: 60-second Loom or live micro-demo + one lesson learned.  
+5. **AI Reflection (weekly):** What AI helped with, what was coded or verified manually, and one mistake AI would have caused if unchecked—submission: 5–8 sentences.
 
 ---
 
