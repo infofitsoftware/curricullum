@@ -1,9 +1,53 @@
-# LMS Curriculum Structure (Topic → Lessons → Project)
-## Program: Modern Software Engineer (Beginner to Job/Freelance/Startup)
-## Duration: 24 Weeks (6 Months)
+# AI-Powered Full Stack Developer Bootcamp — Zero to Job-Ready in 6 Months
+## Learn React, Python, FastAPI & Generative AI | Build & Deploy Real Apps | Land Your First Dev Job, Freelance Client, or Startup MVP (2026–2027)
+
+### Extended Description (Website / SEO)
+
+**No coding background? No problem.** This 6-month, project-based bootcamp takes you from absolute beginner to a confident **AI-powered full stack developer**—someone who can build modern web applications, ship them live on the internet, and integrate **generative AI** into real products employers and clients actually pay for.
+
+You won’t watch endless theory videos. From **Week 1**, you’ll code with **Cursor, ChatGPT, and modern AI tools** the way professionals do today—while learning when to trust AI, when to verify, and how to debug your own work. Every week, you ship something real: a live website, a React app, a secure API, a database-backed platform, and finally a full **capstone product with AI features** you can show in interviews, on Upwork, or to your first startup users.
+
+**What you’ll master**
+
+- **Frontend:** HTML, CSS, JavaScript, **React**, and **TypeScript**—responsive, mobile-first UIs that look and work great on any device  
+- **Backend:** **Python** and **FastAPI**—REST APIs, authentication, validation, and secure integrations  
+- **Database:** **PostgreSQL**, SQL, ORM, and migrations—data that persists like a real business app  
+- **DevOps & cloud:** **Docker**, **AWS EC2**, Nginx, HTTPS, domain setup, and **CI/CD** with GitHub Actions  
+- **AI engineering:** LLM APIs, prompt design, guardrails, and optional **RAG** with vector databases  
+- **Career skills:** Git, pull requests, testing, debugging labs, client-style projects, resume and freelance profile prep  
+
+**One thread. Two flagship projects. Maximum proof.**
+
+Your journey follows **BookEase**—a real booking platform you build and improve every month—then culminates in **HireLocal**, an AI-assisted marketplace capstone deployed with a public HTTPS URL, GitHub portfolio, and demo-ready presentation. Along the way, you’ll complete **client-style builds**, **no-AI skill checks**, and weekly **debugging and mobile QA** so your skills are interview-proof—not tutorial-dependent.
+
+**Who this is for**
+
+- Beginners who want a **full stack developer job** in 2026–2027  
+- Career switchers ready to invest 6 months in **hireable, demonstrable skills**  
+- Future **freelancers** who want to deliver websites, web apps, APIs, and AI chat features for clients  
+- Aspiring **founders** who need to build and launch an MVP without hiring a dev team first  
+
+**What you’ll have on graduation day**
+
+- **2+ live deployed projects** with real URLs—not just localhost demos  
+- A polished **GitHub portfolio** and resume tailored to full stack + AI product work  
+- Experience with the stack companies hire for: **React, TypeScript, Python, FastAPI, PostgreSQL, Docker, AWS, Git, and Generative AI**  
+- Optional **Bonus Week:** deep dive into **vector databases, RAG, and advanced prompt engineering** for students who want an edge in AI roles  
+
+The future of software development is **human + AI**. This bootcamp teaches you both—so you’re not replaced by AI, you’re the developer who knows how to use it to build faster, ship smarter, and stand out.
+
+**Ready to go from zero to job-ready full stack developer?** Join the cohort and start building your first live project in Week 1.
+
+---
+
+**LMS Curriculum Structure** (Topic → Lessons → Project)  
+**Program track:** Modern Software Engineer (Beginner → Job / Freelance / Startup)  
+**Duration:** 24 Weeks (6 Months) + Optional Bonus Week
 
 Use this file directly for LMS module creation.  
 Each topic is intentionally short so students feel consistent progress.
+
+**Optional add-on:** [Bonus Week — Generative AI Foundations](#bonus-week-generative-ai-foundations-vector-db-rag--prompt-engineering) (Week 25). Does not change the core 24-week path; offer after Topic 21 or after graduation for students who want deeper AI engineering skills.
 
 ---
 
@@ -593,6 +637,44 @@ Each topic is intentionally short so students feel consistent progress.
   - Complete freelance marketplace profile (bio, skills, pricing starter packages)
   - Three tailored proposals for realistic job posts (different client types or budgets)
   - Short “next 30 days” plan: outreach targets, weekly hours, and one measurable goal (applications sent, portfolio hits, first call)
+
+---
+
+## Bonus Week: Generative AI Foundations (Vector DB, RAG & Prompt Engineering)
+**Duration:** Week 25 (optional)  
+**Prerequisite:** Topic 21 (AI Integration in Product) recommended; Topic 10–11 (FastAPI basics) helpful  
+**Outcome:** Students can explain how modern GenAI apps work under the hood, build a small RAG pipeline over real documents, and write production-minded prompts—with vector search, chunking, and retrieval quality they can demo and defend in interviews.
+
+### Lessons
+1. GenAI landscape for builders (LLMs, embeddings, tokens, context windows, when to use API vs fine-tuning awareness)
+2. Prompt engineering deep dive (system/user/assistant roles, constraints, few-shot examples, chain-of-thought when appropriate, output schemas, iteration and evaluation)
+3. From plain chat to grounded answers: why models hallucinate and how retrieval helps
+4. Embeddings explained (text → vectors, similarity search, cosine distance intuition with simple examples)
+5. Vector databases overview (pgvector, Chroma, Pinecone, Weaviate—what each is good for; local vs managed trade-offs)
+6. Document ingestion pipeline (load PDFs/Markdown/CSV, clean text, chunking strategies, metadata, overlap trade-offs)
+7. RAG architecture end to end (index → retrieve → augment prompt → generate → cite sources)
+8. Building RAG with FastAPI (ingest endpoint, query endpoint, top-k retrieval, prompt template with retrieved context)
+9. Quality and safety basics (hallucination checks, “I don’t know” responses, source citations, PII redaction, rate limits and cost per query)
+10. Evaluation mindset (golden questions, spot-check retrieved chunks, when answers fail because of bad chunks vs bad prompts)
+11. Beyond RAG awareness (agents, tool calling, MCP at survey level—when RAG is enough vs when orchestration is needed)
+12. AI-assisted workflow for this week: draft chunking/retrieval code → verify retrieved context manually → tune prompts on real failures
+
+### Topic Project
+- **Project:** BookEase / HireLocal Knowledge Assistant (RAG)
+- **Deliverable:** Small RAG-powered Q&A feature with:
+  - A document set (for example: FAQ, service listings, or capstone README exported as Markdown/PDF)
+  - Chunked and embedded data stored in a vector DB (pgvector on existing Postgres or Chroma locally—student choice documented)
+  - FastAPI route: user question → retrieve top-k chunks → LLM answer grounded in retrieved text
+  - Answers include **source references** (file name, section, or chunk id) when possible
+  - At least **5 golden test questions** with expected behavior (including one “not in docs” question that should refuse or say unknown)
+  - Short architecture note: embedding model, vector DB choice, chunk size, and one thing you would improve in phase 2
+  - GitHub commit history with meaningful commit messages
+
+### Bonus Week LMS Notes
+- **Badge:** Generative AI Foundations (optional)
+- **Suggested placement:** After Topic 21 for motivated cohorts, or after Topic 23 as post-program upskill
+- **Submission type:** GitHub link + 3-minute demo video + golden-questions test sheet
+- **Evaluation rubric (bonus):** 35% retrieval returns relevant chunks · 25% answers grounded and cite sources · 20% prompt/edge-case handling · 20% clear explanation in demo/README
 
 ---
 
