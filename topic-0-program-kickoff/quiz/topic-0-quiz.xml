@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- Topic 0: Program Kickoff & Setup — Full topic quiz -->
+<!-- Import: Moodle → Question bank → Import → Moodle XML format -->
+<!-- shuffleanswers=true randomizes option order per attempt -->
+
+<question type="category">
+  <category>
+    <text>$course$/Topic 0 - Program Kickoff and Setup</text>
+  </category>
+</question>
+
+<!-- Lesson 1: Application types -->
+<question type="multichoice">
+  <name><text>L1 - SaaS example</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Which is the best example of <strong>SaaS</strong> (Software as a Service)?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>SaaS is software you use through the browser (or app) and typically pay for monthly — like Netflix or Google Workspace.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Netflix streaming subscription accessed online]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[MS Excel installed only on your laptop with no online account]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A printed college brochure]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[WhatsApp installed only for offline SMS]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>L1 - Web app vs website</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Which option is most like a <strong>web app</strong> rather than a simple static website?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Web apps are interactive and personalized — e.g. Gmail inbox changes per user.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Gmail inbox with login and dynamic messages]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A company "About Us" page with fixed text]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A PDF menu on a restaurant site]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A single poster image with no interaction]]></text></answer>
+</question>
+
+<!-- Lesson 2: Coding vs programming -->
+<question type="multichoice">
+  <name><text>L2 - What is coding</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>What is <strong>coding</strong> in the simplest beginner-friendly sense?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Coding is writing step-by-step instructions in a programming language.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Writing step-by-step instructions in a programming language]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only designing logos for software]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Buying a domain name on the internet]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Repairing computer hardware]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>L2 - Programming scope</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Which activity best fits <strong>programming</strong> (broader than just typing code)?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Programming includes planning, coding, testing, fixing bugs, and shipping software.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Planning, writing, testing, and fixing a login feature for an app]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Changing your phone wallpaper]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Typing one line without knowing what it does]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only watching coding videos without building anything]]></text></answer>
+</question>
+
+<!-- Lesson 3: Web -->
+<question type="multichoice">
+  <name><text>L3 - Browser role</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>What is the main job of a <strong>browser</strong> (e.g. Chrome)?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>The browser requests web resources and renders HTML/CSS/JS so users see and interact with pages.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Request pages from servers and display them to the user]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Store every website permanently inside the laptop hard disk by default]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Replace DNS servers worldwide]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Write Python backend code automatically]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>L3 - DNS function</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>What does <strong>DNS</strong> do?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>DNS maps human-friendly domain names to IP addresses — like a phone book for the internet.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Translates a domain name (like google.com) into an IP address]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Styles web pages with colors and fonts]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Encrypts all files on your USB drive]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Creates Git commits automatically]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>L3 - Server role</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>In the client–server model, the <strong>server</strong> is best described as:</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Servers wait for requests and send responses — pages, data, API results.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[A computer that responds to requests with web pages or data]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only the keyboard the user types on]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The Wi-Fi router brand name]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A Microsoft Word document]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>L3 - Domain purpose</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Why do we use a <strong>domain name</strong> instead of only IP addresses?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Domains like flipkart.com are easier for humans to remember than numeric IPs.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[They are easier for people to remember and type]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[They make the internet work without electricity]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[They replace the need for browsers]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[They are only used on localhost]]></text></answer>
+</question>
+
+<!-- Lesson 4: Files, terminal, localhost, ports -->
+<question type="multichoice">
+  <name><text>L4 - Localhost meaning</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>What does <strong>localhost</strong> mean?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Localhost refers to your own computer — used for development and testing before deploy.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Your own computer, used to test apps during development]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A free domain name from Google]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The cloud data center in another country]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A type of programming language]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>L4 - Port 3000</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>In <code>http://localhost:3000</code>, what does <strong>3000</strong> represent?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>The port number identifies which service/program on the machine should handle the request.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[A port — the numbered "door" for a specific running service]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The number of files in the project]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Your student roll number]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The year the website was created]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>L4 - Terminal purpose</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Why do developers use the <strong>terminal</strong>?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Terminal commands start servers, use Git, install packages, and manage files efficiently.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[To run commands like starting servers, Git, and creating folders]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only to play music]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Because mice are not allowed in programming]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[To replace the need for any code files]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>L4 - mkdir command</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>What does the command <code>mkdir bookease</code> do?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>mkdir = make directory (folder).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Creates a new folder named bookease]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Deletes all files on the computer]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Opens bookease.com in the browser]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Installs Python automatically]]></text></answer>
+</question>
+
+<!-- Lesson 5-6: IDE and GitHub -->
+<question type="multichoice">
+  <name><text>L5 - IDE definition</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>What is an <strong>IDE</strong> (Integrated Development Environment)?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>An IDE is where developers write, edit, and run code — e.g. Cursor or VS Code.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[An application where developers write and edit code]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A social media app for photographers]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A type of computer virus]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The same thing as DNS]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>L6 - Git vs GitHub</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>What is the correct relationship between <strong>Git</strong> and <strong>GitHub</strong>?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Git is version control software; GitHub is a popular website to host Git repositories.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Git tracks code changes; GitHub hosts Git repositories online]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[They are exactly the same product]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[GitHub replaces the need for any code files]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Git is only for mobile games; GitHub is only for email]]></text></answer>
+</question>
+
+<!-- Lessons 7-9: AI -->
+<question type="multichoice">
+  <name><text>L7 - Vibe coding definition</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>What is <strong>vibe coding</strong>?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Vibe coding uses natural-language prompts with AI to generate/edit code while the developer guides and verifies.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Describing what you want in plain language and using AI to help write/edit code while you verify]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Copying code without ever running it]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Coding only with background music and no testing]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A replacement for learning programming fundamentals]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>L7 - Responsible AI loop</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Which step should come <strong>immediately after</strong> AI generates code in the responsible vibe coding loop?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>READ the code (understand it) before RUN — both are required; reading comes right after generate.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Read the code and check if you understand the idea]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Submit to client without testing]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Delete the project folder]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Post API keys in the chat for faster debugging]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>L8 - CCTO framework</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>In the <strong>CCTO</strong> prompt framework, what does the second <strong>C</strong> stand for?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>CCTO = Context, Task, Constraints, Output.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Constraints]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cloud]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Compiler]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Cursor]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>L8 - Weak vs strong prompt</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Which is a <strong>stronger</strong> prompt for a beginner HTML task?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Strong prompts include context, specific task, constraints, and output format.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA["BookEase HTML only: hero with h1, p, button; semantic tags; max 40 lines; code block output"]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA["Make it better"]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA["Fix everything"]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA["Website please"]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>L9 - Manual first rule</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>According to bootcamp rules, when learning a <strong>new topic for the first time</strong>, you should generally:</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Manual first on new concepts builds interview-proof skill; AI can help improve after your attempt.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Try manually (or follow lesson steps) before using AI to generate the full solution]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Always let AI write everything without reading]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Skip exercises and only watch videos]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Use AI during no-AI skill checks]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>L9 - Secrets in prompts</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Which should you <strong>NEVER</strong> paste into an AI chat?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Never share passwords, API keys, or secrets from .env files in AI tools.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[Production API keys and passwords from .env files]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A public HTML snippet without secrets]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[An error message without personal data]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[The project name BookEase]]></text></answer>
+</question>
+
+<!-- Lesson 10: Roadmap -->
+<question type="multichoice">
+  <name><text>L10 - BookEase project</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>What is <strong>BookEase</strong> in this bootcamp?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>BookEase is the main booking-platform project you build and improve throughout the course.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[A booking platform project you build and improve across the program]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A brand of laptop required for class]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A replacement for GitHub]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only a multiple-choice quiz app]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>L10 - Bootcamp duration</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>How long is the core bootcamp path (before optional bonus week)?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>The program is 24 weeks (6 months) with an optional bonus week on advanced AI topics.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[24 weeks (6 months)]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[2 days]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[10 years]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[1 week only]]></text></answer>
+</question>
+
+<!-- Integrated / scenario questions -->
+<question type="multichoice">
+  <name><text>INT - URL journey order</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>When you type <code>https://amazon.in</code> in Chrome, which order is most correct?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>DNS resolves the domain → browser connects to server → server responds → browser renders.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[DNS lookup → browser requests server → server sends response → browser displays page]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Browser stores entire Amazon on disk first → DNS never runs]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Server types URL in DNS → browser prints money]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Domain replaces the need for any server]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>INT - localhost sharing</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>You send a friend the link <code>http://localhost:3000</code>. Why might it <strong>not</strong> work on their laptop?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>localhost always refers to the viewer's own machine — your dev server isn't on their computer.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[localhost points to their own computer, not yours where the app is running]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Because port 3000 is illegal worldwide]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Because DNS does not support localhost on Tuesdays]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Because browsers cannot open numbers]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>INT - Frontend location</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Where does the <strong>frontend</strong> mainly run for a typical web application?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Frontend code is sent to and executed/rendered in the user's browser (client).</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[In the user's browser on their device]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only inside the DNS server]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only on paper printouts]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[Only in Excel spreadsheets]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>INT - HTTPS port</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Which port is commonly used for <strong>HTTPS</strong> (secure websites)?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>HTTPS typically uses port 443; HTTP often uses port 80.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA[443]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[22]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[99999]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[7]]></text></answer>
+</question>
+
+<question type="multichoice">
+  <name><text>INT - Topic 0 project</text></name>
+  <questiontext format="html">
+    <text><![CDATA[<p>What is the Topic 0 project deliverable for this bootcamp?</p>]]></text>
+  </questiontext>
+  <generalfeedback format="html">
+    <text><![CDATA[<p>Students build "My First Web Page" manually first, then improve it with responsible AI assistance.</p>]]></text>
+  </generalfeedback>
+  <defaultgrade>1.0000000</defaultgrade>
+  <penalty>0.3333333</penalty>
+  <hidden>0</hidden>
+  <single>true</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html"><text><![CDATA["My First Web Page" — built manually then improved with AI]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A complete AWS deployment with Docker on day 1]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[A mobile app published to Play Store in Week 1]]></text></answer>
+  <answer fraction="0" format="html"><text><![CDATA[No project until month 6]]></text></answer>
+</question>
+
+</quiz>
