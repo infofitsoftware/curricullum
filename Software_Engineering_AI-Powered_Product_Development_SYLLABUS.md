@@ -15,6 +15,7 @@ Careers in Software Engineering
 Module Assessment
 Quiz
 Assignment
+
 Module 2 — Entrepreneurial & Product Thinking
 Chapter 1: Problems and Business Opportunities
 Every Business Solves a Problem
